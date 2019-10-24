@@ -1,6 +1,8 @@
 package org.pondar.visioexercisekotlin
 
 class Matcher {
+
+    //match expressions against the data and return a list of matching elements
     fun match(data : List<Element>, expressions : ExpressionTermList) : List<Element> {
         val results = mutableListOf<Element>()
         for (element in data)

@@ -1,6 +1,6 @@
 package org.pondar.visioexercisekotlin
 
-
+// parsing methods - note outside of class scope.
 fun parseExpressionTermList(input : String) : ExpressionTermList
 {
 
@@ -47,7 +47,7 @@ fun parseExpressionTermList(input : String) : ExpressionTermList
     return ExpressionTermList(expressionList)
 }
 
-//example usecase: element.parseElement("{ type : æble,  farve : grøn, vægt : 100 }")
+//example usecase: parseElement("{ type : æble,  farve : grøn, vægt : 100 }")
 fun parseElement(input : String) : Element
 {
     val list = input.trim().removeSurrounding("{","}").split(",")
